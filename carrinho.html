@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carrinho</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/favicon.png" />
+  <!---------------->
+
+  <!-- Font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!---------------->
+
+  <!-- CSS Slick Carroceis -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <!------------------------->
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Mock Header (Mantendo consistência) -->
+  <md-header-interna></md-header-interna>
+
+  <div class="container py-5">
+
+    <h4 class="mb-3 fw-bold d-none d-sm-block">
+      Como você prefere pagar?
+    </h4>
+
+    <div class="row g-5">
+
+      <!-- COLUNA DA ESQUERDA: FORMAS DE PAGAMENTO -->
+      <div class="col-lg-8 order-2 order-sm-1">
+        <h4 class="mb-3 fw-bold d-block d-sm-none">
+          Como você prefere pagar?
+        </h4>
+        <!-- Formulário de Seleção -->
+        <form id="navigationForm">
+          <div class="list-group mb-4">
+        
+            <!-- Opção 1 -->
+            <label class="list-group-item d-flex gap-3 align-items-center custom-radio-item">
+              <!-- Value agora aponta para o ID do Modal -->
+              <input class="form-check-input flex-shrink-0" type="radio" name="modalSelector" value="modalPix" data-label="PAGAR COM PIX">
+              <div class="d-flex flex-column align-items-start justify-content-center gap-2">
+                <div>
+                  <i class="bi bi-x-diamond-fill"></i>
+                  Pague com Pix
+                </div>
+                <img class="border border-secondary-subtle p-1 rounded-1" src="media/Pix_logo.png" height="40" alt="">
+              </div>
+            </label>
+        
+            <!-- Opção 2 -->
+            <label class="list-group-item d-flex gap-3 align-items-center custom-radio-item">
+              <input class="form-check-input flex-shrink-0" type="radio" name="modalSelector" value="modalCartao" data-label="PAGAR COM CARTÃO">
+              <div class="d-flex flex-column align-items-start justify-content-center gap-2">
+                <div>
+                  <i class="bi bi-credit-card-2-front-fill"></i>
+                  Pague com Cartão de Crédito
+                </div>
+                <div class="d-flex align-items-start justify-content-start flex-wrap gap-2">
+                  <img class="border border-secondary-subtle p-1 rounded-1" src="media/mastercard.png" height="40" alt="">
+                  <img class="border border-secondary-subtle p-1 rounded-1" src="media/visa.png" height="40" alt="">
+                  <img class="border border-secondary-subtle p-1 rounded-1" src="media/elo.png" height="40" alt="">
+                  <img class="border border-secondary-subtle p-1 rounded-1" src="media/jcb.jpeg" height="40" alt="">
+                  <img class="border border-secondary-subtle p-1 rounded-1" src="media/hiper.png" height="40" alt="">
+                  <img class="border border-secondary-subtle p-1 rounded-1" src="media/diners.png" height="40" alt="">
+                </div>
+              </div>
+            </label>
+        
+            <!-- Opção 3 -->
+            <label class="list-group-item d-flex gap-3 align-items-center custom-radio-item">
+              <input class="form-check-input flex-shrink-0" type="radio" name="modalSelector" value="modalBoleto" data-label="PAGAR COM BOLETO">
+              <div class="d-flex flex-column align-items-start justify-content-center gap-2">
+                <div>
+                  <i class="bi bi-upc-scan"></i>
+                  Pague com Boleto
+                </div>
+                <img class="border border-secondary-subtle py-1 rounded-1" src="media/boleto.png" height="40" alt="">
+              </div>
+            </label>
+        
+            <!-- Opção 4 -->
+            <label class="list-group-item d-flex gap-3 align-items-center custom-radio-item">
+              <input class="form-check-input flex-shrink-0" type="radio" name="modalSelector" value="modalCredito1" data-label="PAGAR COM CRÉDITOS">
+              <span class="pt-1 form-checked-content">
+                <i class="bi bi-coin"></i>
+                Pague com seus Créditos (CRÉDITOS DISPONIVEIS)
+              </span>
+            </label>
+
+            <!-- Opção 5 -->
+            <label class="list-group-item d-flex gap-3 align-items-center custom-radio-item">
+              <input class="form-check-input flex-shrink-0" type="radio" name="modalSelector" value="modalCredito2" data-label="PAGAR COM CRÉDITOS">
+              <span class="pt-1 form-checked-content">
+                <i class="bi bi-coin"></i>
+                Pague com seus Créditos (CRÉDITOS INDISPONIVEIS)
+              </span>
+            </label>
+          </div>
+        
+          <!-- Container do Botão -->
+          <div class="fixed-bottom">
+            <div class="d-grid bg-white py-4 border-top" id="action-container">
+              <div class="container">
+                <div class="d-flex align-items-start gap-5">
+                  <div class="d-flex justify-content-start gap-1 gap-sm-2 align-items-start pb-2 flex-column flex-sm-row">
+                    <h5 class="fw-bold m-0">Total a pagar:</h5>
+                    <h4 class="fw-bold text-red m-0" id="cart-total-price-2">R$ 0,00</h4>
+                  </div>
+                  <div class="d-flex justify-content-start gap-1 gap-sm-2 align-items-start pb-2 flex-column flex-sm-row">
+                    <h5 class="fw-bold m-0">Total de créditos:</h5>
+                    <h4 class="fw-bold text-red m-0" id="cart-total-credits-1">0</h4>
+                  </div>
+                </div>
+                <button type="button" id="btn-action" class="btn btn-red btn-lg fw-bold w-100">
+                  Abrir Modal
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- COLUNA DA DIREITA: RESUMO (Sticky) -->
+      <div class="col-lg-4 order-1 order-sm-2">
+        <div class="card shadow border-0 summary-card position-static">
+          <div class="card-header bg-white border-bottom py-3">
+            <h5 class="m-0 fw-bold">Resumo do Pedido</h5>
+          </div>
+          <div class="card-body">
+
+            <!-- Item Principal -->
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <div>
+                <h6 class="fw-bold mb-0" id="cart-plan-name">Plano Carregando...</h6>
+                <small class="text-muted" id="cart-plan-credits">...</small>
+              </div>
+              <span class="fw-bold m-0 p-0" id="cart-plan-price">R$ 0,00</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <small class="text-muted">Horário Selecionado:</small>
+              <p id="cart-plan-horario" class="fw-bold m-0 p-0"></p>
+            </div>
+
+            <!-- Lista de Upgrades (Dinâmica) -->
+            <div id="cart-upgrades-list" class="my-3 border-top border-bottom py-2">
+              <!-- Injetado via JS -->
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Total de Créditos</span>
+              <span class="badge bg-secondary" id="cart-total-credits">0</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <h5 class="fw-bold m-0">Total a pagar</h5>
+              <h4 class="fw-bold text-red m-0" id="cart-total-price">R$ 0,00</h4>
+            </div>
+
+          </div>
+          <div class="card-footer bg-light p-3">
+            <small class="text-muted d-block text-center mb-2">
+              Ao continuar, você concorda com nossos Termos de Uso.
+            </small>
+            <button class="btn btn-outline-secondary w-100 btn-sm" onclick="history.back()">
+              <i class="bi bi-pencil"></i> Editar Pedido
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <md-footer></md-footer>
+  <!-- Fim Footer -->
+
+  <!-- Modal Área do Membro -->
+  <md-modal-areamembro></md-modal-areamembro>
+  <!-- Fim Modal Área do Membro -->
+
+  <!-- ================= MODAIS DIFERENTES ================= -->
+  
+  <!-- Modal 1: Pagar com PIX -->
+  <div class="modal fade" id="modalPix" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-x-diamond-fill"></i>
+            Pagar com PIX
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="pix-section" class="p-2 animate-fade">
+            <div class="d-flex align-items-center justify-content-center flex-column align-items-center">
+              <!-- Placeholder QR Code -->
+              <div class="bg-light p-2 d-inline-block rounded border">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ExemploPagamentoDevArchitect" alt="QR Code Pix" class="img-fluid" id="pix-qrcode">
+              </div>
+              <div class="d-flex justify-content-between align-items-start flex-column py-3 border-bottom w-100">
+                <h5 class="fw-bold m-0">Total a pagar</h5>
+                <h4 class="fw-bold text-red m-0" id="cart-total-price-modal">R$ 0,00</h4>
+              </div>
+              <div class="w-100 mt-3">
+                <h5 class="fw-bold mb-3">Dados do Pix</h5>
+                <p class="text-muted small mb-4">
+                  1. Abra o app do seu banco.<br />
+                  2. Escolha pagar Pix com QR Code ou Copia e Cola.<br />
+                  3. Escaneie o código ou copie a chave abaixo.
+                </p>
+              </div>
+              
+              <label class="form-label fw-bold">Código Copia e Cola</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control bg-light"
+                  value="00020126580014br.gov.bcb.pix0136123e4567-e89b-12d3-a456-426614174000..." readonly id="pix-code-input">
+                <button class="btn btn-outline-secondary" type="button" onclick="copyPixCode()">
+                  <i class="bi bi-clipboard"></i> Copiar
+                </button>
+              </div>
+              <div class="alert alert-warning py-2 small w-100">
+                <i class="bi bi-clock"></i> Este código expira em 10 minutos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Pagar com Cartão -->
+  <div class="modal fade" id="modalCartao" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-credit-card-2-front-fill"></i>
+            Pagar com Cartão de Crédito
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="card-section" class="p-2 animate-fade">
+            <div class="d-flex justify-content-between align-items-start flex-column pb-3 mb-3 border-bottom w-100">
+              <h5 class="fw-bold m-0">Total a pagar</h5>
+              <h4 class="fw-bold text-red m-0" id="cart-total-price-modal-2">R$ 0,00</h4>
+            </div>
+            <h5 class="fw-bold mb-4">Dados do Cartão</h5>
+            <form id="credit-card-form" novalidate>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="form-label">Número do Cartão</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-credit-card"></i></span>
+                    <input type="text" class="form-control" placeholder="0000 0000 0000 0000" id="cc-number" maxlength="19"
+                      required>
+                  </div>
+                </div>
+          
+                <div class="col-12">
+                  <label class="form-label">Nome do Titular</label>
+                  <input type="text" class="form-control" placeholder="Como impresso no cartão" required>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">CPF do Titular</label>
+                  <input type="text" class="form-control" placeholder="Como impresso no cartão" required>
+                </div>
+          
+                <div class="col-md-6">
+                  <label class="form-label">Validade</label>
+                  <input type="text" class="form-control" placeholder="MM/AA" maxlength="5" id="cc-expiry" required>
+                </div>
+          
+                <div class="col-md-6">
+                  <label class="form-label">CVV</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="123" maxlength="3" required>
+                    <span class="input-group-text bg-white" title="Código de segurança atrás do cartão">
+                      <i class="bi bi-question-circle"></i>
+                    </span>
+                  </div>
+                </div>
+          
+                <div class="col-12">
+                  <label class="form-label">Parcelamento</label>
+                  <select class="form-select" id="installments-select">
+                    <option value="1">1x sem juros</option>
+                    <!-- Opções geradas via JS -->
+                  </select>
+                </div>
+          
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-red w-100 py-2 fw-bold fs-5">
+                    <i class="bi bi-lock-fill"></i> Pagar Agora
+                  </button>
+                  <p class="text-center text-muted mt-2 small">
+                    <i class="bi bi-shield-check"></i> Pagamento processado em ambiente seguro.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Pagar com Boleto -->
+  <div class="modal fade" id="modalBoleto" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-upc-scan"></i>
+            Pagar com Boleto
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="boleto-section" class="p-2 animate-fade">
+            FALTA INFORMAÇÕES
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Pagar com Créditos (DISPONIVEIS) -->
+  <div class="modal fade" id="modalCredito1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-coin"></i>
+            Pagar com Créditos
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-between align-items-start flex-column pb-3 mb-3 border-bottom w-100">
+            <h5 class="fw-bold m-0">Total a pagar com Créditos</h5>
+            <h4 class="fw-bold text-red m-0" id="cart-total-credits-2">R$ 0,00</h4>
+          </div>
+          <div id="credito-section">
+            <p class="m-0 p-0 text-success">
+              Créditos disponíveis: <strong>10</strong>
+            </p>
+            <p class="m-0 p-0 text-secondary-emphasis my-2">
+              Créditos usados: <strong>8</strong>
+            </p>
+            <p class="m-0 p-0 text-secondary-emphasis mb-3">
+              Créditos restantes: <strong>2</strong>
+            </p>
+            <button type="button" class="btn btn-red w-100 py-2 fw-bold fs-5" data-bs-target="#ModalCarragementoCupom" data-bs-toggle="modal" id="btnPagar">
+              <i class="bi bi-coin"></i>
+              Pagar com Créditos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Pagar com Créditos (INDISPONIVEIS) -->
+  <div class="modal fade" id="modalCredito2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-coin"></i>
+            Pagar com Créditos
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-between align-items-start flex-column pb-3 mb-3 border-bottom w-100">
+            <h5 class="fw-bold m-0">Total a pagar com Créditos</h5>
+            <h4 class="fw-bold text-red m-0" id="cart-total-credits-3">R$ 0,00</h4>
+          </div>
+          <div id="credito-section">
+            <p class="m-0 p-0 text-warning">
+              Créditos disponíveis: <strong>0</strong>
+            </p>
+            <p class="m-0 p-0 text-secondary-emphasis my-2">
+              Créditos usados: <strong>8</strong>
+            </p>
+            <p class="m-0 p-0 text-secondary-emphasis mb-3">
+              Créditos restantes: <strong>0</strong>
+            </p>
+            <div class="d-flex align-items-center justify-content-center p-3 mb-3 bg-warning text-dark w-100 gap-2 rounded-3">
+              <i class="bi bi-exclamation-triangle-fill fs-1"></i>
+              <p class="m-0 p-0 fs-6 lh-sm">
+                É necessário comprar um pacote de créditos para pagar esta promoção com créditos
+              </p>
+            </div>
+            <button type="submit" class="btn btn-red w-100 py-2 fw-bold fs-5" onclick="window.location.href='creditos.html';">
+              <i class="bi bi-coin"></i>
+              Comprar Créditos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script type="module" src="js/modulos/libs.js"></script>
+
+  <!-- Lógica dos modais -->
+  <script>
+      (function () {
+        'use strict';
+
+        const form = document.getElementById('navigationForm');
+        const actionContainer = document.getElementById('action-container');
+        const actionBtn = document.getElementById('btn-action');
+
+        let selectedModalId = null;
+
+        // Handler para seleção do Radio
+        function handleSelection(event) {
+          if (event.target.matches('input[name="modalSelector"]')) {
+            const radio = event.target;
+            selectedModalId = radio.value; // Pega o ID do modal (ex: modalGoogle)
+            const labelText = radio.getAttribute('data-label');
+
+            // Atualiza botão
+            actionBtn.textContent = labelText;
+
+            // Mostra botão
+            actionContainer.classList.add('visible');
+          }
+        }
+
+        // Handler para clique no botão
+        function openModal() {
+          if (!selectedModalId) return;
+
+          // Seleciona o elemento do modal no DOM
+          const modalElement = document.getElementById(selectedModalId);
+
+          if (modalElement) {
+            // Instancia e abre o modal usando a API do Bootstrap 5
+            // 'const modal' cria uma nova instância ou recupera a existente se gerenciado corretamente
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+          } else {
+            console.error("Modal não encontrado ID:", selectedModalId);
+          }
+        }
+
+        form.addEventListener('change', handleSelection);
+        actionBtn.addEventListener('click', openModal);
+
+      })();
+  </script>
+
+  <!-- Lógica dos modal -->
+  <script>
+    document.getElementById('btnPagar').addEventListener('click', function () {
+      // 2. Configurações do redirecionamento
+      let tempoRestante = 10;
+      const urlDestino = '../gerenciarseuanuncio.html'; // Altere para sua página de destino
+      const contadorTexto = document.getElementById('contador');
+
+      // 3. Atualiza o número do contador na tela a cada segundo
+      const intervalo = setInterval(() => {
+        tempoRestante--;
+        contadorTexto.textContent = tempoRestante;
+
+        if (tempoRestante <= 0) {
+          clearInterval(intervalo);
+          window.location.href = urlDestino;
+        }
+      }, 1000);
+    });
+  </script>
+
+  <!-- Modal Pagamento bem Sucedido -->
+  <div class="modal fade" id="ModalCarragementoCupom" tabindex="-1" aria-labelledby="ModalCarragementoCupom" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+        <div class="modal-body w-100 d-flex align-items-center justify-content-center flex-column">
+          <i class="bi bi-check-circle-fill text-green" style="font-size: 100px; line-height: 100px; color: --bs-green;"></i>
+          <h2 class="alert-heading fs-5 text-center fw-bold pt-4">
+            Pagamento Bem-Sucedido!
+          </h2>
+          <p class="m-0 p-0 text-center">
+            Sua transação foi processada.<br/>
+            Redirecionando para <strong>Meus anúncios</strong> em <strong id="contador">10</strong> segundos...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal Pagamento bem Sucedido -->
+</body>
+
+</html>
