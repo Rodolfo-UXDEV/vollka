@@ -1,0 +1,1826 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Meus anúncios</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/favicon.png" />
+  <!---------------->
+
+  <!-- Font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!---------------->
+
+  <!-- CSS Slick Carroceis -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <!------------------------->
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Sessão 1 -->
+  <md-header-interna></md-header-interna>
+  <!-- Fim sessão 1 -->
+
+  <!-- Sessão 2 -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="d-flex align-items-center justify-content-center flex-column gap-2">
+        <h1 class="w-100 text-center fs-2 fw-bold">
+          Meus anúncios
+        </h1>
+        <button type="button" class="btn btn-red px-3 d-flex justify-content-center align-items-center gap-2 w-100 w-sm-auto" onclick="window.location.href='../publicaranuncio.html';">
+          NOVO ANÚNCIO
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.0289 3.70147L3.90961 5.8144C3.52006 6.20276 3.16272 6.55901 2.88053 6.88106C2.6993 7.08788 2.5182 7.31423 2.3648 7.56435L2.34415 7.54376C2.30495 7.50468 2.28533 7.48512 2.26565 7.46602C1.89729 7.10861 1.464 6.82444 0.988958 6.62872C0.963572 6.61826 0.937807 6.60805 0.886279 6.58763L0.570738 6.4626C0.143269 6.29322 0.0293434 5.74292 0.354612 5.41864C1.28812 4.48796 2.40892 3.37054 2.94983 3.14611C3.42687 2.94818 3.94219 2.88232 4.4392 2.95577C4.89458 3.02307 5.32538 3.25699 6.0289 3.70147Z" fill="white"></path>
+            <path d="M9.64757 14.8266C9.81834 14.9999 9.93177 15.1223 10.0343 15.2531C10.1696 15.4258 10.2906 15.6091 10.396 15.8014C10.5147 16.0178 10.6068 16.2489 10.7911 16.7113C10.9412 17.0876 11.4396 17.1871 11.7291 16.8985L11.7992 16.8287C12.7326 15.898 13.8534 14.7805 14.0785 14.2412C14.277 13.7656 14.3431 13.2519 14.2694 12.7563C14.2019 12.3024 13.9674 11.8729 13.5217 11.1717L11.3953 13.2917C10.9969 13.6889 10.6317 14.0531 10.3013 14.3384C10.1033 14.5093 9.88672 14.6802 9.64757 14.8266Z" fill="white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5392 12.3797L15.4116 7.52195C16.1133 6.82235 16.4641 6.47256 16.6489 6.02774C16.8337 5.58293 16.8337 5.08825 16.8337 4.09889V3.62624C16.8337 2.10487 16.8337 1.34418 16.3597 0.871555C15.8856 0.398926 15.1227 0.398926 13.5967 0.398926H13.1227C12.1303 0.398926 11.6341 0.398926 11.188 0.583174C10.7418 0.767422 10.391 1.11722 9.6893 1.81681L4.81692 6.67457C3.99699 7.49204 3.48858 7.99892 3.29171 8.48849C3.22951 8.64318 3.19841 8.79614 3.19841 8.95663C3.19841 9.62503 3.73791 10.1629 4.81692 11.2387L4.96193 11.3833L6.6607 9.65916C6.90297 9.41328 7.29868 9.41035 7.54456 9.65262C7.79044 9.89488 7.79337 10.2906 7.5511 10.5365L5.84716 12.2658L5.96138 12.3797C7.04038 13.4555 7.57989 13.9934 8.2503 13.9934C8.39842 13.9934 8.54016 13.9671 8.68274 13.9146C9.18545 13.7294 9.69862 13.2178 10.5392 12.3797ZM12.8282 6.67493C12.1962 7.3051 11.1714 7.3051 10.5393 6.67493C9.90725 6.04476 9.90725 5.02305 10.5393 4.39288C11.1714 3.7627 12.1962 3.7627 12.8282 4.39288C13.4603 5.02305 13.4603 6.04476 12.8282 6.67493Z" fill="white"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Abas de anúncios -->
+      <ul class="nav nav-tabs nav-fill mt-5" id="meusTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active lh-1 fw-medium" id="ativo-tab" data-bs-toggle="tab" data-bs-target="#ativo" type="button" role="tab" aria-controls="ativo" aria-selected="true">
+            <span class="fs-7">1</span><br/>
+            Ativos (Ativos)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link lh-1 fw-medium" id="pendentes-tab" data-bs-toggle="tab" data-bs-target="#pendentes" type="button" role="tab" aria-controls="pendentes" aria-selected="true">
+            <span class="fs-7">1</span><br />
+            Ativos (Pendentes)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link lh-1 fw-medium" id="gratis-tab" data-bs-toggle="tab" data-bs-target="#gratis" type="button" role="tab" aria-controls="gratis" aria-selected="true">
+            <span class="fs-7">1</span><br />
+            Ativos (Grátis)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link lh-1 fw-medium" id="renovar-tab" data-bs-toggle="tab" data-bs-target="#renovar" type="button" role="tab" aria-controls="renovar" aria-selected="true">
+            <span class="fs-7">1</span><br />
+            Ativos (Renovar)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link lh-1 fw-medium" id="inativo-tab" data-bs-toggle="tab" data-bs-target="#inativo" type="button" role="tab" aria-controls="inativo" aria-selected="false">
+            <span class="fs-7">0</span><br />
+            Inativos
+          </button>
+        </li>
+      </ul>
+      <!----------------------->
+
+      <!-- Conteúdo das Abas -->
+      <div class="tab-content m-0 mt-5" id="meusTabsContent">
+      
+        <!-- Conteúdo da Aba Ativos -->
+        <div class="tab-pane fade show active" id="ativo" role="tabpanel" aria-labelledby="ativo-tab">
+
+          <!-- Filtro -->
+          <div class="bg-light p-3 rounded-2">
+            <h4 class="fs-5 m-0 p-0 fw-semibold">
+              Procure seus anuncios
+            </h4>
+            <div class="my-3">
+              <label for="tipoAnuncio" class="form-label fs-6">Tipos de Anúncios</label>
+              <select class="form-select">
+                <option value="Todos" selected>Todos</option>
+                <option value="Promovidos">Promovidos</option>
+                <option value="Grátis">Grátis</option>
+              </select>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button link-red gap-2 px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-list-ul fs-5"></i>
+                    Abra os filtros
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mt-2 mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Anúncio expirando</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Promoção expirada</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="pesquisar" placeholder="Pesquise aqui...">
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>Categoria</option>
+                        <option value="Acompanhantes">Acompanhantes</option>
+                        <option value="TransexETravestis">Transex E Travestis</option>
+                        <option value="Mensagens">Mensagens</option>
+                        <option value="AcompanhantesMasculinos">Acompanhantes Masculinos</option>
+                        <option value="EncontrosCasuais">Encontros Casuais</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option selected="selected" value="">Cidade</option>
+                        <option value="">Águas Claras</option>
+                        <option value="">Alvorada</option>
+                        <option value="">Americana</option>
+                        <option value="">Ananindeua</option>
+                        <option value="">Anápolis</option>
+                        <option value="">Angra dos Reis</option>
+                        <option value="">Aparecida de Goiânia</option>
+                        <option value="">Aracaju</option>
+                        <option value="">Aracatuba</option>
+                        <option value="">Arapiraca</option>
+                        <option value="">Araraquara</option>
+                        <option value="">Araruama</option>
+                        <option value="">Araucária</option>
+                        <option value="">Armação dos Búzios</option>
+                        <option value="">Arraial do Cabo</option>
+                        <option value="">Atibaia</option>
+                        <option value="">Balneário Camboriú</option>
+                        <option value="">Barueri</option>
+                        <option value="">Bauru</option>
+                        <option value="">Belém do Pará</option>
+                        <option value="">Belford Roxo</option>
+                        <option value="">Belo Horizonte</option>
+                        <option value="">Bertioga</option>
+                        <option value="">Betim</option>
+                        <option value="">Blumenau</option>
+                        <option value="">Boa Vista</option>
+                        <option value="">Bragança Paulista</option>
+                        <option value="">Brasilia</option>
+                        <option value="">Cabo Frio</option>
+                        <option value="">Camaçari</option>
+                        <option value="">Camaragibe</option>
+                        <option value="">Campina Grande</option>
+                        <option value="">Campinas</option>
+                        <option value="">Campo Grande</option>
+                        <option value="">Campos dos Goytacazes</option>
+                        <option value="">Canoas</option>
+                        <option value="">Caraguatatuba</option>
+                        <option value="">Carapicuíba</option>
+                        <option value="">Cariacica</option>
+                        <option value="">Caruaru</option>
+                        <option value="">Cascavel</option>
+                        <option value="">Castanhal</option>
+                        <option value="">Caucaia</option>
+                        <option value="">Caxias do Sul</option>
+                        <option value="">Ceilândia</option>
+                        <option value="">Chapecó</option>
+                        <option value="">Colombo</option>
+                        <option value="">Contagem</option>
+                        <option value="">Cotia</option>
+                        <option value="">Criciúma</option>
+                        <option value="">Cuiabá</option>
+                        <option value="">Curitiba</option>
+                        <option value="">Diadema</option>
+                        <option value="">Dourados</option>
+                        <option value="">Duque de Caxias</option>
+                        <option value="">Embu das Artes</option>
+                        <option value="">Fazenda Rio Grande</option>
+                        <option value="">Feira de Santana</option>
+                        <option value="">Florianópolis</option>
+                        <option value="">Fortaleza</option>
+                        <option value="">Foz do Iguaçu</option>
+                        <option value="">Franca</option>
+                        <option value="">Franco da Rocha</option>
+                        <option value="">Gama</option>
+                        <option value="">Goiânia</option>
+                        <option value="">Gravataí</option>
+                        <option value="">Guará</option>
+                        <option value="">Guarapari</option>
+                        <option value="">Guaratinguetá</option>
+                        <option value="">Guarujá</option>
+                        <option value="">Guarulhos</option>
+                        <option value="">Hortolândia</option>
+                        <option value="">Igarassu</option>
+                        <option value="">Ilheus</option>
+                        <option value="">Indaiatuba</option>
+                        <option value="">Itabaiana</option>
+                        <option value="">Itaboraí</option>
+                        <option value="">Itabuna</option>
+                        <option value="">Itajaí</option>
+                        <option value="">Itanhaém</option>
+                        <option value="">Itapetininga</option>
+                        <option value="">Itapevi</option>
+                        <option value="">Itaquaquecetuba</option>
+                        <option value="">Itu</option>
+                        <option value="">Jaboatão dos Guararapes</option>
+                        <option value="">Jacareí</option>
+                        <option value="">João Pessoa</option>
+                        <option value="">Joinville</option>
+                        <option value="">Juazeiro do Norte</option>
+                        <option value="">Juiz de Fora</option>
+                        <option value="">Jundiaí</option>
+                        <option value="">Lages</option>
+                        <option value="">Lauro de Freitas</option>
+                        <option value="">Limeira</option>
+                        <option value="">Linhares</option>
+                        <option value="">Londrina</option>
+                        <option value="">Luziânia</option>
+                        <option value="">Macaé</option>
+                        <option value="">Macapá</option>
+                        <option value="">Maceió</option>
+                        <option value="">Manaus</option>
+                        <option value="">Marabá</option>
+                        <option value="">Maracanaú</option>
+                        <option value="">Maricá</option>
+                        <option value="">Marília</option>
+                        <option value="">Maringá</option>
+                        <option value="">Mauá</option>
+                        <option value="">Mesquita</option>
+                        <option value="">Mogi das Cruzes</option>
+                        <option value="">Mogi Guaçu</option>
+                        <option value="">Mongaguá</option>
+                        <option value="">Montes Claros</option>
+                        <option value="">Mossoró</option>
+                        <option value="">Natal</option>
+                        <option value="">Nilópolis</option>
+                        <option value="">Niteroi</option>
+                        <option value="">Nova Friburgo</option>
+                        <option value="">Nova Iguaçu</option>
+                        <option value="">Nova Mutum</option>
+                        <option value="">Novo Hamburgo</option>
+                        <option value="">Olinda</option>
+                        <option value="">Osasco</option>
+                        <option value="">Palhoça</option>
+                        <option value="">Palmas</option>
+                        <option value="">Parnaíba</option>
+                        <option value="">Passo Fundo</option>
+                        <option value="">Patos de Minas</option>
+                        <option value="">Paulínia</option>
+                        <option value="">Paulista</option>
+                        <option value="">Peruíbe</option>
+                        <option value="">Petrolina</option>
+                        <option value="">Petrópolis</option>
+                        <option value="">Pinhais</option>
+                        <option value="">Piracicaba</option>
+                        <option value="">Planaltina</option>
+                        <option value="">Poços de Calda</option>
+                        <option value="">Ponta Grossa</option>
+                        <option value="">Porto Alegre</option>
+                        <option value="">Porto Seguro</option>
+                        <option value="">Porto Velho</option>
+                        <option value="">Pouso Alegre</option>
+                        <option value="">Praia Grande</option>
+                        <option value="">Presidente Prudente</option>
+                        <option value="">Recife</option>
+                        <option value="">Ribeirão Preto</option>
+                        <option value="">Rio Branco</option>
+                        <option value="">Rio Claro</option>
+                        <option value="">Rio das Ostras</option>
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Rio Verde</option>
+                        <option value="">Rondonópolis</option>
+                        <option value="">Salto</option>
+                        <option value="">Salvador</option>
+                        <option value="">Samambaia</option>
+                        <option value="">Santa Maria</option>
+                        <option value="">Santarém</option>
+                        <option value="">Santo André</option>
+                        <option value="">Santos</option>
+                        <option value="">São Bernardo do Campo</option>
+                        <option value="">São Carlos</option>
+                        <option value="">São Gonçalo</option>
+                        <option value="">São João de Meriti</option>
+                        <option value="">São José</option>
+                        <option value="">São José do Rio Preto</option>
+                        <option value="">São José dos Campos</option>
+                        <option value="">São José dos Pinhais</option>
+                        <option value="">São Leopoldo</option>
+                        <option value="">São Luís</option>
+                        <option value="">São Paulo</option>
+                        <option value="">São Pedro da Aldeia</option>
+                        <option value="">São Vicente</option>
+                        <option value="">Sapucaia do Sul</option>
+                        <option value="">Saquarema</option>
+                        <option value="">Serra</option>
+                        <option value="">Serra Talhada</option>
+                        <option value="">Sete Lagoas</option>
+                        <option value="">Sinop</option>
+                        <option value="">Sobradinho</option>
+                        <option value="">Sobral</option>
+                        <option value="">Sorocaba</option>
+                        <option value="">Sorriso</option>
+                        <option value="">Sumaré</option>
+                        <option value="">Suzano</option>
+                        <option value="">Taboão da Serra</option>
+                        <option value="">Taguatinga</option>
+                        <option value="">Tatuí</option>
+                        <option value="">Taubaté</option>
+                        <option value="">Teresina</option>
+                        <option value="">Três Lagoas</option>
+                        <option value="">Trindade</option>
+                        <option value="">Tubarão</option>
+                        <option value="">Ubatuba</option>
+                        <option value="">Uberaba</option>
+                        <option value="">Uberlândia</option>
+                        <option value="">Valparaíso de Goiás</option>
+                        <option value="">Várzea Grande</option>
+                        <option value="">Viamão</option>
+                        <option value="">Vicente Pires</option>
+                        <option value="">Vila Velha</option>
+                        <option value="">Vitória da Conquista</option>
+                        <option value="">Vitória</option>
+                        <option value="">Volta Redonda</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>E-mail</option>
+                        <option value="email">teste@teste.com</option>
+                      </select>
+                    </div>
+                    <button type="button" class="btn btn-red">
+                      Filtrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---------------------->
+
+          <!-- Informação -->
+          <div class="m-0 my-5 p-0 ">
+            <p class="m-0 p-0 fs-6">
+              Você tem <strong>1 anúncio ativo</strong> 
+            </p>  
+          </div>
+          <!---------------------->
+
+          <!-- Informação Nome -->
+          <div class="m-0 mt-5 mb-3 p-0">
+            <span class="m-0 p-3 fs-7 fs-sm-6 border border-light-subtle rounded-4 fw-medium gap-1">
+              <i class="bi bi-person-fill fs-6 fs-sm-5"></i>
+              Juliene de Paula de Oliveira Santiago
+            </span>  
+          </div>
+          <!---------------------->
+
+          <!-- Disponibilidade -->
+          <div class="p-0 d-flex align-items-center justify-content-end" style="margin-bottom: -15px;">
+            <span class="m-0 p-2 fs-7 lh-0 fw-medium text-success border border-light-subtle rounded-4 fw-medium gap-1 bg-white">
+              <i class="bi bi-circle-fill fs-8"></i>
+              Publicado
+            </span>  
+          </div>
+          <!---------------------->
+
+          <!-- Informações sobre o anuncio -->
+          <div class="shadow-sm px-2 px-sm-4 pt-4 pb-2 mb-5 bg-body-tertiary rounded">
+            <div class="mb-3">
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Data de vencimento: <strong>Janeiro 14, 2026</strong>
+              </p>
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Publicado por: julianepsantiago93@gmail.com
+              </p>
+            </div>
+
+            <div class="bg-white p-3 mb-4 border border-light-subtle rounded-3">
+              <div>
+                <p class="m-0 p-0 fs-5 fw-medium d-flex align-items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="currentColor">
+                    <path d="M6.65533 0.621196L0.260038 8.03343C-0.326891 8.71369 0.144149 9.78574 1.02998 9.78574H3.28444C4.18561 9.78574 4.89469 10.5439 5.05255 11.4536C5.92063 16.4557 10.7893 17.7832 15.6327 17.9997C16.0166 18.0168 16.1297 17.497 15.7825 17.3283C11.6938 15.3418 11.1631 14.7662 11.0942 11.4607C11.075 10.537 11.8144 9.78574 12.7156 9.78574H14.97C15.8559 9.78574 16.3269 8.71369 15.74 8.03343L9.34468 0.621197C8.63016 -0.206933 7.36984 -0.206934 6.65533 0.621196Z"></path>
+                  </svg>
+                  Top
+                </p>
+                <p class="m-0 my-1 p-0 fs-7 fw-medium">
+                  <strong>6 destaques</strong> por noite durante <strong>1 noite</strong>
+                </p>
+                <p class="m-0 p-0 fs-7 fw-medium d-flex align-items-center gap-1">
+                  <i class="bi bi-moon fs-5"></i>
+                  Madrugada 00:00 - 06:00
+                </p>
+              </div>
+              <hr />
+              <div>
+                <p class="p-0 m-0 fs-7 lh-0 fw-medium text-success d-flex align-items-center gap-2">
+                  <i class="bi bi-circle-fill fs-8"></i>
+                  <strong>Promoção ativa</strong>
+                </p>
+                <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                  A promoção termina em <strong>16 de Dezembro de 2025 às 23:59.</strong>
+                </p>
+              </div>
+            </div>
+
+            <!-- Banner SUPER TOP Destacado Novidade -->
+            <a href="anuncio.html" class="text-decoration-none">
+              <div class="d-flex flex-row border border-1 border-red rounded-3" style="background-color: #ffe3e3;">
+                <div id="meuCarrossel" class="carousel slide carrocel-espaco" data-bs-ride="carousel">
+                  <div class="carousel-inner Banner-Top gap-2">
+                      <div class="carousel-item active">
+                        <img src="media/baner-segundario.jpg" class="d-block h-100">
+                      </div>
+                      <div class="carousel-item p-0">
+                        <img src="media/baner-segundario.jpg" class="d-block h-100">
+                      </div>
+                      <div class="carousel-item p-0">
+                        <img src="media/baner-segundario.jpg" class="d-block h-100">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button>
+                  <div class="d-flex align-items-center justify-content-center gap-1 text-white fw-regular rounded-2 py-1 bg-red" style="width: 100px; position: absolute; top: 0;">
+                    NOVIDADE
+                  </div>
+                </div>
+                <div class="d-flex align-items-end justify-content-start flex-column">
+                  <div class="d-flex align-items-center justify-content-center gap-1 text-white fw-regular rounded-2 py-1 bg-red" style="width: 80px;">
+                    360°
+                    <img src="media/logo-fogo-branco.png" alt="" width="14">
+                  </div>
+                  <div class="px-3 px-md-4 pt-2">
+                    <h2 class="fs-6 fs-md-5 text-red">
+                      LOREM IPSUM DOLOR SIT AMET.
+                    </h2>
+                    <p class="text-dark fs-7 fs-md-6 frase-limitada">
+                      Nam sodales, augue sed fermentum vestibulum, elit turpis consequat odio, eu facilisis ligula tortor non lacus. Aenean faucibus mauris a massa consectetur consectetur vel quis erat. Pellentesque auctor at diam eu sodales.
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                        <path fill="#2b2b2b" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg class="toggle-location" width="12" fill="#2b2b2b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 320 512">
+                        <path d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z"/>
+                      </svg>
+                      Lorem
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-end gap-2 px-2 pt-1 pb-2">
+                    <button type="button" class="btn btn-red py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="24" viewBox="0 0 512 512">
+                        <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="btn btn-success py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="24" viewBox="0 0 448 512">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!---------------->
+
+            <!-- Botões de Manutenção do Anúncio -->
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-start">
+              <div class="d-flex flex-row align-items-center align-items-sm-start justify-content-center justify-content-sm-start py-4 px-0 px-sm-5 gap-5 gap-sm-7">
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pause-circle-fill fs-4"></i>
+                  PAUSAR
+                </a>
+                <a href="gerenciarseuanuncio.html" class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pencil-fill fs-4"></i>
+                  EDITAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-trash3-fill fs-4"></i>
+                  EXCLUIR
+                </a>
+              </div>
+              <button type="button" class="btn btn-red w-100 py-2 d-none">
+                PAGAR AGORA
+              </button>
+            </div>
+            
+            <!---------------->
+          </div>
+          <!---------------------->
+
+        </div>
+        <!----------------------->
+
+        <!-- Conteúdo da Aba Pendentes -->
+        <div class="tab-pane fade" id="pendentes" role="tabpanel" aria-labelledby="pendentes-tab">
+        
+          <!-- Filtro -->
+          <div class="bg-light p-3 rounded-2">
+            <h4 class="fs-5 m-0 p-0 fw-semibold">
+              Procure seus anuncios
+            </h4>
+            <div class="my-3">
+              <label for="tipoAnuncio" class="form-label fs-6">Tipos de Anúncios</label>
+              <select class="form-select">
+                <option value="Todos" selected>Todos</option>
+                <option value="Promovidos">Promovidos</option>
+                <option value="Grátis">Grátis</option>
+              </select>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button link-red gap-2 px-3 py-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-list-ul fs-5"></i>
+                    Abra os filtros
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mt-2 mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Anúncio expirando</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Promoção expirada</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="pesquisar" placeholder="Pesquise aqui...">
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>Categoria</option>
+                        <option value="Acompanhantes">Acompanhantes</option>
+                        <option value="TransexETravestis">Transex E Travestis</option>
+                        <option value="Mensagens">Mensagens</option>
+                        <option value="AcompanhantesMasculinos">Acompanhantes Masculinos</option>
+                        <option value="EncontrosCasuais">Encontros Casuais</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option selected="selected" value="">Cidade</option>
+                        <option value="">Águas Claras</option>
+                        <option value="">Alvorada</option>
+                        <option value="">Americana</option>
+                        <option value="">Ananindeua</option>
+                        <option value="">Anápolis</option>
+                        <option value="">Angra dos Reis</option>
+                        <option value="">Aparecida de Goiânia</option>
+                        <option value="">Aracaju</option>
+                        <option value="">Aracatuba</option>
+                        <option value="">Arapiraca</option>
+                        <option value="">Araraquara</option>
+                        <option value="">Araruama</option>
+                        <option value="">Araucária</option>
+                        <option value="">Armação dos Búzios</option>
+                        <option value="">Arraial do Cabo</option>
+                        <option value="">Atibaia</option>
+                        <option value="">Balneário Camboriú</option>
+                        <option value="">Barueri</option>
+                        <option value="">Bauru</option>
+                        <option value="">Belém do Pará</option>
+                        <option value="">Belford Roxo</option>
+                        <option value="">Belo Horizonte</option>
+                        <option value="">Bertioga</option>
+                        <option value="">Betim</option>
+                        <option value="">Blumenau</option>
+                        <option value="">Boa Vista</option>
+                        <option value="">Bragança Paulista</option>
+                        <option value="">Brasilia</option>
+                        <option value="">Cabo Frio</option>
+                        <option value="">Camaçari</option>
+                        <option value="">Camaragibe</option>
+                        <option value="">Campina Grande</option>
+                        <option value="">Campinas</option>
+                        <option value="">Campo Grande</option>
+                        <option value="">Campos dos Goytacazes</option>
+                        <option value="">Canoas</option>
+                        <option value="">Caraguatatuba</option>
+                        <option value="">Carapicuíba</option>
+                        <option value="">Cariacica</option>
+                        <option value="">Caruaru</option>
+                        <option value="">Cascavel</option>
+                        <option value="">Castanhal</option>
+                        <option value="">Caucaia</option>
+                        <option value="">Caxias do Sul</option>
+                        <option value="">Ceilândia</option>
+                        <option value="">Chapecó</option>
+                        <option value="">Colombo</option>
+                        <option value="">Contagem</option>
+                        <option value="">Cotia</option>
+                        <option value="">Criciúma</option>
+                        <option value="">Cuiabá</option>
+                        <option value="">Curitiba</option>
+                        <option value="">Diadema</option>
+                        <option value="">Dourados</option>
+                        <option value="">Duque de Caxias</option>
+                        <option value="">Embu das Artes</option>
+                        <option value="">Fazenda Rio Grande</option>
+                        <option value="">Feira de Santana</option>
+                        <option value="">Florianópolis</option>
+                        <option value="">Fortaleza</option>
+                        <option value="">Foz do Iguaçu</option>
+                        <option value="">Franca</option>
+                        <option value="">Franco da Rocha</option>
+                        <option value="">Gama</option>
+                        <option value="">Goiânia</option>
+                        <option value="">Gravataí</option>
+                        <option value="">Guará</option>
+                        <option value="">Guarapari</option>
+                        <option value="">Guaratinguetá</option>
+                        <option value="">Guarujá</option>
+                        <option value="">Guarulhos</option>
+                        <option value="">Hortolândia</option>
+                        <option value="">Igarassu</option>
+                        <option value="">Ilheus</option>
+                        <option value="">Indaiatuba</option>
+                        <option value="">Itabaiana</option>
+                        <option value="">Itaboraí</option>
+                        <option value="">Itabuna</option>
+                        <option value="">Itajaí</option>
+                        <option value="">Itanhaém</option>
+                        <option value="">Itapetininga</option>
+                        <option value="">Itapevi</option>
+                        <option value="">Itaquaquecetuba</option>
+                        <option value="">Itu</option>
+                        <option value="">Jaboatão dos Guararapes</option>
+                        <option value="">Jacareí</option>
+                        <option value="">João Pessoa</option>
+                        <option value="">Joinville</option>
+                        <option value="">Juazeiro do Norte</option>
+                        <option value="">Juiz de Fora</option>
+                        <option value="">Jundiaí</option>
+                        <option value="">Lages</option>
+                        <option value="">Lauro de Freitas</option>
+                        <option value="">Limeira</option>
+                        <option value="">Linhares</option>
+                        <option value="">Londrina</option>
+                        <option value="">Luziânia</option>
+                        <option value="">Macaé</option>
+                        <option value="">Macapá</option>
+                        <option value="">Maceió</option>
+                        <option value="">Manaus</option>
+                        <option value="">Marabá</option>
+                        <option value="">Maracanaú</option>
+                        <option value="">Maricá</option>
+                        <option value="">Marília</option>
+                        <option value="">Maringá</option>
+                        <option value="">Mauá</option>
+                        <option value="">Mesquita</option>
+                        <option value="">Mogi das Cruzes</option>
+                        <option value="">Mogi Guaçu</option>
+                        <option value="">Mongaguá</option>
+                        <option value="">Montes Claros</option>
+                        <option value="">Mossoró</option>
+                        <option value="">Natal</option>
+                        <option value="">Nilópolis</option>
+                        <option value="">Niteroi</option>
+                        <option value="">Nova Friburgo</option>
+                        <option value="">Nova Iguaçu</option>
+                        <option value="">Nova Mutum</option>
+                        <option value="">Novo Hamburgo</option>
+                        <option value="">Olinda</option>
+                        <option value="">Osasco</option>
+                        <option value="">Palhoça</option>
+                        <option value="">Palmas</option>
+                        <option value="">Parnaíba</option>
+                        <option value="">Passo Fundo</option>
+                        <option value="">Patos de Minas</option>
+                        <option value="">Paulínia</option>
+                        <option value="">Paulista</option>
+                        <option value="">Peruíbe</option>
+                        <option value="">Petrolina</option>
+                        <option value="">Petrópolis</option>
+                        <option value="">Pinhais</option>
+                        <option value="">Piracicaba</option>
+                        <option value="">Planaltina</option>
+                        <option value="">Poços de Calda</option>
+                        <option value="">Ponta Grossa</option>
+                        <option value="">Porto Alegre</option>
+                        <option value="">Porto Seguro</option>
+                        <option value="">Porto Velho</option>
+                        <option value="">Pouso Alegre</option>
+                        <option value="">Praia Grande</option>
+                        <option value="">Presidente Prudente</option>
+                        <option value="">Recife</option>
+                        <option value="">Ribeirão Preto</option>
+                        <option value="">Rio Branco</option>
+                        <option value="">Rio Claro</option>
+                        <option value="">Rio das Ostras</option>
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Rio Verde</option>
+                        <option value="">Rondonópolis</option>
+                        <option value="">Salto</option>
+                        <option value="">Salvador</option>
+                        <option value="">Samambaia</option>
+                        <option value="">Santa Maria</option>
+                        <option value="">Santarém</option>
+                        <option value="">Santo André</option>
+                        <option value="">Santos</option>
+                        <option value="">São Bernardo do Campo</option>
+                        <option value="">São Carlos</option>
+                        <option value="">São Gonçalo</option>
+                        <option value="">São João de Meriti</option>
+                        <option value="">São José</option>
+                        <option value="">São José do Rio Preto</option>
+                        <option value="">São José dos Campos</option>
+                        <option value="">São José dos Pinhais</option>
+                        <option value="">São Leopoldo</option>
+                        <option value="">São Luís</option>
+                        <option value="">São Paulo</option>
+                        <option value="">São Pedro da Aldeia</option>
+                        <option value="">São Vicente</option>
+                        <option value="">Sapucaia do Sul</option>
+                        <option value="">Saquarema</option>
+                        <option value="">Serra</option>
+                        <option value="">Serra Talhada</option>
+                        <option value="">Sete Lagoas</option>
+                        <option value="">Sinop</option>
+                        <option value="">Sobradinho</option>
+                        <option value="">Sobral</option>
+                        <option value="">Sorocaba</option>
+                        <option value="">Sorriso</option>
+                        <option value="">Sumaré</option>
+                        <option value="">Suzano</option>
+                        <option value="">Taboão da Serra</option>
+                        <option value="">Taguatinga</option>
+                        <option value="">Tatuí</option>
+                        <option value="">Taubaté</option>
+                        <option value="">Teresina</option>
+                        <option value="">Três Lagoas</option>
+                        <option value="">Trindade</option>
+                        <option value="">Tubarão</option>
+                        <option value="">Ubatuba</option>
+                        <option value="">Uberaba</option>
+                        <option value="">Uberlândia</option>
+                        <option value="">Valparaíso de Goiás</option>
+                        <option value="">Várzea Grande</option>
+                        <option value="">Viamão</option>
+                        <option value="">Vicente Pires</option>
+                        <option value="">Vila Velha</option>
+                        <option value="">Vitória da Conquista</option>
+                        <option value="">Vitória</option>
+                        <option value="">Volta Redonda</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>E-mail</option>
+                        <option value="email">teste@teste.com</option>
+                      </select>
+                    </div>
+                    <button type="button" class="btn btn-red">
+                      Filtrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---------------------->
+        
+          <!-- Informação -->
+          <div class="m-0 my-5 p-0 ">
+            <p class="m-0 p-0 fs-6">
+              Você tem <strong>1 anúncio ativo</strong>
+            </p>
+          </div>
+          <!---------------------->
+        
+          <!-- Informação Nome -->
+          <div class="m-0 mt-5 mb-3 p-0">
+            <span class="m-0 p-3 fs-7 fs-sm-6 border border-light-subtle rounded-4 fw-medium gap-1">
+              <i class="bi bi-person-fill fs-6 fs-sm-5"></i>
+              Juliene de Paula de Oliveira Santiago
+            </span>
+          </div>
+          <!---------------------->
+        
+          <!-- Disponibilidade -->
+          <div class="p-0 d-flex align-items-center justify-content-end" style="margin-bottom: -15px;">
+            <span
+              class="m-0 p-2 fs-7 lh-0 fw-medium text-success border border-light-subtle rounded-4 fw-medium gap-1 bg-white">
+              <i class="bi bi-circle-fill fs-8"></i>
+              Publicado
+            </span>
+          </div>
+          <!---------------------->
+        
+          <!-- Informações sobre o anuncio -->
+          <div class="shadow-sm px-2 px-sm-4 pt-4 pb-2 mb-5 bg-body-tertiary rounded">
+            <div class="mb-3">
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Data de vencimento: <strong>Janeiro 14, 2026</strong>
+              </p>
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Publicado por: julianepsantiago93@gmail.com
+              </p>
+            </div>
+        
+            <div class="bg-white p-3 mb-4 border border-light-subtle rounded-3">
+              <div>
+                <p class="m-0 p-0 fs-5 fw-medium d-flex align-items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="currentColor">
+                    <path
+                      d="M6.65533 0.621196L0.260038 8.03343C-0.326891 8.71369 0.144149 9.78574 1.02998 9.78574H3.28444C4.18561 9.78574 4.89469 10.5439 5.05255 11.4536C5.92063 16.4557 10.7893 17.7832 15.6327 17.9997C16.0166 18.0168 16.1297 17.497 15.7825 17.3283C11.6938 15.3418 11.1631 14.7662 11.0942 11.4607C11.075 10.537 11.8144 9.78574 12.7156 9.78574H14.97C15.8559 9.78574 16.3269 8.71369 15.74 8.03343L9.34468 0.621197C8.63016 -0.206933 7.36984 -0.206934 6.65533 0.621196Z">
+                    </path>
+                  </svg>
+                  Top
+                </p>
+                <p class="m-0 my-1 p-0 fs-7 fw-medium">
+                  <strong>6 destaques</strong> por noite durante <strong>1 noite</strong>
+                </p>
+                <p class="m-0 p-0 fs-7 fw-medium d-flex align-items-center gap-1">
+                  <i class="bi bi-moon fs-5"></i>
+                  Madrugada 00:00 - 06:00
+                </p>
+              </div>
+              <hr />
+              <div>
+                <p class="p-0 m-0 fs-7 lh-0 fw-medium text-primary d-flex align-items-center gap-2">
+                  <i class="bi bi-circle-fill fs-8"></i>
+                  <strong>Promoção a pagar</strong>
+                </p>
+              </div>
+            </div>
+        
+            <!-- Banner TOP - Sem imagem -->
+            <a href="anuncio.html" class="text-decoration-none">
+              <div class="d-flex flex-row border border-1 border-gray rounded-3 mb-4 bg-white">
+                <div class="d-flex align-items-end justify-content-start flex-column">
+                  <div class="d-flex align-items-center justify-content-center gap-1 text-white fw-regular rounded-2 py-1 bg-red"
+                    style="width: 80px;">
+                    360°
+                    <img src="media/logo-fogo-branco.png" alt="" width="14">
+                  </div>
+                  <div class="px-3 px-md-4 pb-4 pt-2">
+                    <h2 class="fs-6 fs-md-5 text-red">
+                      LOREM IPSUM DOLOR SIT AMET.
+                    </h2>
+                    <p class="text-dark fs-7 fs-md-6 frase-limitada">
+                      Nam sodales, augue sed fermentum vestibulum, elit turpis consequat odio, eu facilisis ligula tortor non lacus.
+                      Aenean faucibus mauris a massa consectetur consectetur vel quis erat. Pellentesque auctor at diam eu sodales.
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                        <path fill="#2b2b2b"
+                          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg class="toggle-location" width="12" fill="#2b2b2b" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path
+                          d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 320 512">
+                        <path
+                          d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z" />
+                      </svg>
+                      Lorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!---------------->
+        
+            <!-- Botões de Manutenção do Anúncio -->
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-start">
+              <div
+                class="d-flex flex-row align-items-center align-items-sm-start justify-content-center justify-content-sm-start py-4 px-0 px-sm-5 gap-5 gap-sm-7">
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pause-circle-fill fs-4"></i>
+                  PAUSAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pencil-fill fs-4"></i>
+                  EDITAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-trash3-fill fs-4"></i>
+                  EXCLUIR
+                </a>
+              </div>
+              <button type="button" class="btn btn-red w-100 py-2">
+                PAGAR AGORA
+              </button>
+            </div>
+        
+            <!---------------->
+          </div>
+          <!---------------------->
+        </div>
+
+        <!-- Conteúdo da Aba Grátis -->
+        <div class="tab-pane fade" id="gratis" role="tabpanel" aria-labelledby="gratis-tab">
+        
+          <!-- Filtro -->
+          <div class="bg-light p-3 rounded-2">
+            <h4 class="fs-5 m-0 p-0 fw-semibold">
+              Procure seus anuncios
+            </h4>
+            <div class="my-3">
+              <label for="tipoAnuncio" class="form-label fs-6">Tipos de Anúncios</label>
+              <select class="form-select">
+                <option value="Todos" selected>Todos</option>
+                <option value="Promovidos">Promovidos</option>
+                <option value="Grátis">Grátis</option>
+              </select>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button link-red gap-2 px-3 py-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-list-ul fs-5"></i>
+                    Abra os filtros
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mt-2 mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Anúncio expirando</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Promoção expirada</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="pesquisar" placeholder="Pesquise aqui...">
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>Categoria</option>
+                        <option value="Acompanhantes">Acompanhantes</option>
+                        <option value="TransexETravestis">Transex E Travestis</option>
+                        <option value="Mensagens">Mensagens</option>
+                        <option value="AcompanhantesMasculinos">Acompanhantes Masculinos</option>
+                        <option value="EncontrosCasuais">Encontros Casuais</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option selected="selected" value="">Cidade</option>
+                        <option value="">Águas Claras</option>
+                        <option value="">Alvorada</option>
+                        <option value="">Americana</option>
+                        <option value="">Ananindeua</option>
+                        <option value="">Anápolis</option>
+                        <option value="">Angra dos Reis</option>
+                        <option value="">Aparecida de Goiânia</option>
+                        <option value="">Aracaju</option>
+                        <option value="">Aracatuba</option>
+                        <option value="">Arapiraca</option>
+                        <option value="">Araraquara</option>
+                        <option value="">Araruama</option>
+                        <option value="">Araucária</option>
+                        <option value="">Armação dos Búzios</option>
+                        <option value="">Arraial do Cabo</option>
+                        <option value="">Atibaia</option>
+                        <option value="">Balneário Camboriú</option>
+                        <option value="">Barueri</option>
+                        <option value="">Bauru</option>
+                        <option value="">Belém do Pará</option>
+                        <option value="">Belford Roxo</option>
+                        <option value="">Belo Horizonte</option>
+                        <option value="">Bertioga</option>
+                        <option value="">Betim</option>
+                        <option value="">Blumenau</option>
+                        <option value="">Boa Vista</option>
+                        <option value="">Bragança Paulista</option>
+                        <option value="">Brasilia</option>
+                        <option value="">Cabo Frio</option>
+                        <option value="">Camaçari</option>
+                        <option value="">Camaragibe</option>
+                        <option value="">Campina Grande</option>
+                        <option value="">Campinas</option>
+                        <option value="">Campo Grande</option>
+                        <option value="">Campos dos Goytacazes</option>
+                        <option value="">Canoas</option>
+                        <option value="">Caraguatatuba</option>
+                        <option value="">Carapicuíba</option>
+                        <option value="">Cariacica</option>
+                        <option value="">Caruaru</option>
+                        <option value="">Cascavel</option>
+                        <option value="">Castanhal</option>
+                        <option value="">Caucaia</option>
+                        <option value="">Caxias do Sul</option>
+                        <option value="">Ceilândia</option>
+                        <option value="">Chapecó</option>
+                        <option value="">Colombo</option>
+                        <option value="">Contagem</option>
+                        <option value="">Cotia</option>
+                        <option value="">Criciúma</option>
+                        <option value="">Cuiabá</option>
+                        <option value="">Curitiba</option>
+                        <option value="">Diadema</option>
+                        <option value="">Dourados</option>
+                        <option value="">Duque de Caxias</option>
+                        <option value="">Embu das Artes</option>
+                        <option value="">Fazenda Rio Grande</option>
+                        <option value="">Feira de Santana</option>
+                        <option value="">Florianópolis</option>
+                        <option value="">Fortaleza</option>
+                        <option value="">Foz do Iguaçu</option>
+                        <option value="">Franca</option>
+                        <option value="">Franco da Rocha</option>
+                        <option value="">Gama</option>
+                        <option value="">Goiânia</option>
+                        <option value="">Gravataí</option>
+                        <option value="">Guará</option>
+                        <option value="">Guarapari</option>
+                        <option value="">Guaratinguetá</option>
+                        <option value="">Guarujá</option>
+                        <option value="">Guarulhos</option>
+                        <option value="">Hortolândia</option>
+                        <option value="">Igarassu</option>
+                        <option value="">Ilheus</option>
+                        <option value="">Indaiatuba</option>
+                        <option value="">Itabaiana</option>
+                        <option value="">Itaboraí</option>
+                        <option value="">Itabuna</option>
+                        <option value="">Itajaí</option>
+                        <option value="">Itanhaém</option>
+                        <option value="">Itapetininga</option>
+                        <option value="">Itapevi</option>
+                        <option value="">Itaquaquecetuba</option>
+                        <option value="">Itu</option>
+                        <option value="">Jaboatão dos Guararapes</option>
+                        <option value="">Jacareí</option>
+                        <option value="">João Pessoa</option>
+                        <option value="">Joinville</option>
+                        <option value="">Juazeiro do Norte</option>
+                        <option value="">Juiz de Fora</option>
+                        <option value="">Jundiaí</option>
+                        <option value="">Lages</option>
+                        <option value="">Lauro de Freitas</option>
+                        <option value="">Limeira</option>
+                        <option value="">Linhares</option>
+                        <option value="">Londrina</option>
+                        <option value="">Luziânia</option>
+                        <option value="">Macaé</option>
+                        <option value="">Macapá</option>
+                        <option value="">Maceió</option>
+                        <option value="">Manaus</option>
+                        <option value="">Marabá</option>
+                        <option value="">Maracanaú</option>
+                        <option value="">Maricá</option>
+                        <option value="">Marília</option>
+                        <option value="">Maringá</option>
+                        <option value="">Mauá</option>
+                        <option value="">Mesquita</option>
+                        <option value="">Mogi das Cruzes</option>
+                        <option value="">Mogi Guaçu</option>
+                        <option value="">Mongaguá</option>
+                        <option value="">Montes Claros</option>
+                        <option value="">Mossoró</option>
+                        <option value="">Natal</option>
+                        <option value="">Nilópolis</option>
+                        <option value="">Niteroi</option>
+                        <option value="">Nova Friburgo</option>
+                        <option value="">Nova Iguaçu</option>
+                        <option value="">Nova Mutum</option>
+                        <option value="">Novo Hamburgo</option>
+                        <option value="">Olinda</option>
+                        <option value="">Osasco</option>
+                        <option value="">Palhoça</option>
+                        <option value="">Palmas</option>
+                        <option value="">Parnaíba</option>
+                        <option value="">Passo Fundo</option>
+                        <option value="">Patos de Minas</option>
+                        <option value="">Paulínia</option>
+                        <option value="">Paulista</option>
+                        <option value="">Peruíbe</option>
+                        <option value="">Petrolina</option>
+                        <option value="">Petrópolis</option>
+                        <option value="">Pinhais</option>
+                        <option value="">Piracicaba</option>
+                        <option value="">Planaltina</option>
+                        <option value="">Poços de Calda</option>
+                        <option value="">Ponta Grossa</option>
+                        <option value="">Porto Alegre</option>
+                        <option value="">Porto Seguro</option>
+                        <option value="">Porto Velho</option>
+                        <option value="">Pouso Alegre</option>
+                        <option value="">Praia Grande</option>
+                        <option value="">Presidente Prudente</option>
+                        <option value="">Recife</option>
+                        <option value="">Ribeirão Preto</option>
+                        <option value="">Rio Branco</option>
+                        <option value="">Rio Claro</option>
+                        <option value="">Rio das Ostras</option>
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Rio Verde</option>
+                        <option value="">Rondonópolis</option>
+                        <option value="">Salto</option>
+                        <option value="">Salvador</option>
+                        <option value="">Samambaia</option>
+                        <option value="">Santa Maria</option>
+                        <option value="">Santarém</option>
+                        <option value="">Santo André</option>
+                        <option value="">Santos</option>
+                        <option value="">São Bernardo do Campo</option>
+                        <option value="">São Carlos</option>
+                        <option value="">São Gonçalo</option>
+                        <option value="">São João de Meriti</option>
+                        <option value="">São José</option>
+                        <option value="">São José do Rio Preto</option>
+                        <option value="">São José dos Campos</option>
+                        <option value="">São José dos Pinhais</option>
+                        <option value="">São Leopoldo</option>
+                        <option value="">São Luís</option>
+                        <option value="">São Paulo</option>
+                        <option value="">São Pedro da Aldeia</option>
+                        <option value="">São Vicente</option>
+                        <option value="">Sapucaia do Sul</option>
+                        <option value="">Saquarema</option>
+                        <option value="">Serra</option>
+                        <option value="">Serra Talhada</option>
+                        <option value="">Sete Lagoas</option>
+                        <option value="">Sinop</option>
+                        <option value="">Sobradinho</option>
+                        <option value="">Sobral</option>
+                        <option value="">Sorocaba</option>
+                        <option value="">Sorriso</option>
+                        <option value="">Sumaré</option>
+                        <option value="">Suzano</option>
+                        <option value="">Taboão da Serra</option>
+                        <option value="">Taguatinga</option>
+                        <option value="">Tatuí</option>
+                        <option value="">Taubaté</option>
+                        <option value="">Teresina</option>
+                        <option value="">Três Lagoas</option>
+                        <option value="">Trindade</option>
+                        <option value="">Tubarão</option>
+                        <option value="">Ubatuba</option>
+                        <option value="">Uberaba</option>
+                        <option value="">Uberlândia</option>
+                        <option value="">Valparaíso de Goiás</option>
+                        <option value="">Várzea Grande</option>
+                        <option value="">Viamão</option>
+                        <option value="">Vicente Pires</option>
+                        <option value="">Vila Velha</option>
+                        <option value="">Vitória da Conquista</option>
+                        <option value="">Vitória</option>
+                        <option value="">Volta Redonda</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>E-mail</option>
+                        <option value="email">teste@teste.com</option>
+                      </select>
+                    </div>
+                    <button type="button" class="btn btn-red">
+                      Filtrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---------------------->
+        
+          <!-- Informação -->
+          <div class="m-0 my-5 p-0 ">
+            <p class="m-0 p-0 fs-6">
+              Você tem <strong>1 anúncio ativo</strong>
+            </p>
+          </div>
+          <!---------------------->
+        
+          <!-- Informação Nome -->
+          <div class="m-0 mt-5 mb-3 p-0">
+            <span class="m-0 p-3 fs-7 fs-sm-6 border border-light-subtle rounded-4 fw-medium gap-1">
+              <i class="bi bi-person-fill fs-6 fs-sm-5"></i>
+              Juliene de Paula de Oliveira Santiago
+            </span>
+          </div>
+          <!---------------------->
+        
+          <!-- Disponibilidade -->
+          <div class="p-0 d-flex align-items-center justify-content-end" style="margin-bottom: -15px;">
+            <span
+              class="m-0 p-2 fs-7 lh-0 fw-medium text-success border border-light-subtle rounded-4 fw-medium gap-1 bg-white">
+              <i class="bi bi-circle-fill fs-8"></i>
+              Publicado
+            </span>
+          </div>
+          <!---------------------->
+        
+          <!-- Informações sobre o anuncio -->
+          <div class="shadow-sm px-2 px-sm-4 pt-4 pb-2 mb-5 bg-body-tertiary rounded">
+            <div class="mb-3">
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Data de vencimento: <strong>Janeiro 14, 2026</strong>
+              </p>
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Publicado por: julianepsantiago93@gmail.com
+              </p>
+            </div>
+        
+            <!-- Banner TOP - Sem imagem -->
+            <a href="anuncio.html" class="text-decoration-none">
+              <div class="d-flex flex-row border border-1 border-gray rounded-3 mb-4 bg-white">
+                <div class="d-flex align-items-end justify-content-start flex-column">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-1 text-white fw-regular rounded-2 py-1 bg-red"
+                    style="width: 80px;">
+                    360°
+                    <img src="media/logo-fogo-branco.png" alt="" width="14">
+                  </div>
+                  <div class="px-3 px-md-4 pb-4 pt-2">
+                    <h2 class="fs-6 fs-md-5 text-red">
+                      LOREM IPSUM DOLOR SIT AMET.
+                    </h2>
+                    <p class="text-dark fs-7 fs-md-6 frase-limitada">
+                      Nam sodales, augue sed fermentum vestibulum, elit turpis consequat odio, eu facilisis ligula tortor non
+                      lacus.
+                      Aenean faucibus mauris a massa consectetur consectetur vel quis erat. Pellentesque auctor at diam eu
+                      sodales.
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                        <path fill="#2b2b2b"
+                          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg class="toggle-location" width="12" fill="#2b2b2b" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path
+                          d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 320 512">
+                        <path
+                          d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z" />
+                      </svg>
+                      Lorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!---------------->
+        
+            <!-- Botões de Manutenção do Anúncio -->
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-start">
+              <div
+                class="d-flex flex-row align-items-center align-items-sm-start justify-content-center justify-content-sm-start py-4 px-0 px-sm-5 gap-5 gap-sm-7">
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pause-circle-fill fs-4"></i>
+                  PAUSAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pencil-fill fs-4"></i>
+                  EDITAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-trash3-fill fs-4"></i>
+                  EXCLUIR
+                </a>
+              </div>
+              <button type="button" class="btn btn-red w-100 py-2">
+                PROMOVA O SEU ANÚNCIO
+              </button>
+            </div>
+        
+            <!---------------->
+          </div>
+          <!---------------------->
+        </div>
+        
+        <!-- Conteúdo da Aba Renovar -->
+        <div class="tab-pane fade" id="renovar" role="tabpanel" aria-labelledby="renovar-tab">
+        
+          <!-- Filtro -->
+          <div class="bg-light p-3 rounded-2">
+            <h4 class="fs-5 m-0 p-0 fw-semibold">
+              Procure seus anuncios
+            </h4>
+            <div class="my-3">
+              <label for="tipoAnuncio" class="form-label fs-6">Tipos de Anúncios</label>
+              <select class="form-select">
+                <option value="Todos" selected>Todos</option>
+                <option value="Promovidos">Promovidos</option>
+                <option value="Grátis">Grátis</option>
+              </select>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button link-red gap-2 px-3 py-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-list-ul fs-5"></i>
+                    Abra os filtros
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mt-2 mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Anúncio expirando</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-4">
+                      <label for="tipoAnuncio" class="form-label fs-6">Promoção expirada</label>
+                      <select class="form-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="Promovidos">Sim</option>
+                        <option value="Gratis">Não</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="pesquisar" placeholder="Pesquise aqui...">
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>Categoria</option>
+                        <option value="Acompanhantes">Acompanhantes</option>
+                        <option value="TransexETravestis">Transex E Travestis</option>
+                        <option value="Mensagens">Mensagens</option>
+                        <option value="AcompanhantesMasculinos">Acompanhantes Masculinos</option>
+                        <option value="EncontrosCasuais">Encontros Casuais</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option selected="selected" value="">Cidade</option>
+                        <option value="">Águas Claras</option>
+                        <option value="">Alvorada</option>
+                        <option value="">Americana</option>
+                        <option value="">Ananindeua</option>
+                        <option value="">Anápolis</option>
+                        <option value="">Angra dos Reis</option>
+                        <option value="">Aparecida de Goiânia</option>
+                        <option value="">Aracaju</option>
+                        <option value="">Aracatuba</option>
+                        <option value="">Arapiraca</option>
+                        <option value="">Araraquara</option>
+                        <option value="">Araruama</option>
+                        <option value="">Araucária</option>
+                        <option value="">Armação dos Búzios</option>
+                        <option value="">Arraial do Cabo</option>
+                        <option value="">Atibaia</option>
+                        <option value="">Balneário Camboriú</option>
+                        <option value="">Barueri</option>
+                        <option value="">Bauru</option>
+                        <option value="">Belém do Pará</option>
+                        <option value="">Belford Roxo</option>
+                        <option value="">Belo Horizonte</option>
+                        <option value="">Bertioga</option>
+                        <option value="">Betim</option>
+                        <option value="">Blumenau</option>
+                        <option value="">Boa Vista</option>
+                        <option value="">Bragança Paulista</option>
+                        <option value="">Brasilia</option>
+                        <option value="">Cabo Frio</option>
+                        <option value="">Camaçari</option>
+                        <option value="">Camaragibe</option>
+                        <option value="">Campina Grande</option>
+                        <option value="">Campinas</option>
+                        <option value="">Campo Grande</option>
+                        <option value="">Campos dos Goytacazes</option>
+                        <option value="">Canoas</option>
+                        <option value="">Caraguatatuba</option>
+                        <option value="">Carapicuíba</option>
+                        <option value="">Cariacica</option>
+                        <option value="">Caruaru</option>
+                        <option value="">Cascavel</option>
+                        <option value="">Castanhal</option>
+                        <option value="">Caucaia</option>
+                        <option value="">Caxias do Sul</option>
+                        <option value="">Ceilândia</option>
+                        <option value="">Chapecó</option>
+                        <option value="">Colombo</option>
+                        <option value="">Contagem</option>
+                        <option value="">Cotia</option>
+                        <option value="">Criciúma</option>
+                        <option value="">Cuiabá</option>
+                        <option value="">Curitiba</option>
+                        <option value="">Diadema</option>
+                        <option value="">Dourados</option>
+                        <option value="">Duque de Caxias</option>
+                        <option value="">Embu das Artes</option>
+                        <option value="">Fazenda Rio Grande</option>
+                        <option value="">Feira de Santana</option>
+                        <option value="">Florianópolis</option>
+                        <option value="">Fortaleza</option>
+                        <option value="">Foz do Iguaçu</option>
+                        <option value="">Franca</option>
+                        <option value="">Franco da Rocha</option>
+                        <option value="">Gama</option>
+                        <option value="">Goiânia</option>
+                        <option value="">Gravataí</option>
+                        <option value="">Guará</option>
+                        <option value="">Guarapari</option>
+                        <option value="">Guaratinguetá</option>
+                        <option value="">Guarujá</option>
+                        <option value="">Guarulhos</option>
+                        <option value="">Hortolândia</option>
+                        <option value="">Igarassu</option>
+                        <option value="">Ilheus</option>
+                        <option value="">Indaiatuba</option>
+                        <option value="">Itabaiana</option>
+                        <option value="">Itaboraí</option>
+                        <option value="">Itabuna</option>
+                        <option value="">Itajaí</option>
+                        <option value="">Itanhaém</option>
+                        <option value="">Itapetininga</option>
+                        <option value="">Itapevi</option>
+                        <option value="">Itaquaquecetuba</option>
+                        <option value="">Itu</option>
+                        <option value="">Jaboatão dos Guararapes</option>
+                        <option value="">Jacareí</option>
+                        <option value="">João Pessoa</option>
+                        <option value="">Joinville</option>
+                        <option value="">Juazeiro do Norte</option>
+                        <option value="">Juiz de Fora</option>
+                        <option value="">Jundiaí</option>
+                        <option value="">Lages</option>
+                        <option value="">Lauro de Freitas</option>
+                        <option value="">Limeira</option>
+                        <option value="">Linhares</option>
+                        <option value="">Londrina</option>
+                        <option value="">Luziânia</option>
+                        <option value="">Macaé</option>
+                        <option value="">Macapá</option>
+                        <option value="">Maceió</option>
+                        <option value="">Manaus</option>
+                        <option value="">Marabá</option>
+                        <option value="">Maracanaú</option>
+                        <option value="">Maricá</option>
+                        <option value="">Marília</option>
+                        <option value="">Maringá</option>
+                        <option value="">Mauá</option>
+                        <option value="">Mesquita</option>
+                        <option value="">Mogi das Cruzes</option>
+                        <option value="">Mogi Guaçu</option>
+                        <option value="">Mongaguá</option>
+                        <option value="">Montes Claros</option>
+                        <option value="">Mossoró</option>
+                        <option value="">Natal</option>
+                        <option value="">Nilópolis</option>
+                        <option value="">Niteroi</option>
+                        <option value="">Nova Friburgo</option>
+                        <option value="">Nova Iguaçu</option>
+                        <option value="">Nova Mutum</option>
+                        <option value="">Novo Hamburgo</option>
+                        <option value="">Olinda</option>
+                        <option value="">Osasco</option>
+                        <option value="">Palhoça</option>
+                        <option value="">Palmas</option>
+                        <option value="">Parnaíba</option>
+                        <option value="">Passo Fundo</option>
+                        <option value="">Patos de Minas</option>
+                        <option value="">Paulínia</option>
+                        <option value="">Paulista</option>
+                        <option value="">Peruíbe</option>
+                        <option value="">Petrolina</option>
+                        <option value="">Petrópolis</option>
+                        <option value="">Pinhais</option>
+                        <option value="">Piracicaba</option>
+                        <option value="">Planaltina</option>
+                        <option value="">Poços de Calda</option>
+                        <option value="">Ponta Grossa</option>
+                        <option value="">Porto Alegre</option>
+                        <option value="">Porto Seguro</option>
+                        <option value="">Porto Velho</option>
+                        <option value="">Pouso Alegre</option>
+                        <option value="">Praia Grande</option>
+                        <option value="">Presidente Prudente</option>
+                        <option value="">Recife</option>
+                        <option value="">Ribeirão Preto</option>
+                        <option value="">Rio Branco</option>
+                        <option value="">Rio Claro</option>
+                        <option value="">Rio das Ostras</option>
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Rio Verde</option>
+                        <option value="">Rondonópolis</option>
+                        <option value="">Salto</option>
+                        <option value="">Salvador</option>
+                        <option value="">Samambaia</option>
+                        <option value="">Santa Maria</option>
+                        <option value="">Santarém</option>
+                        <option value="">Santo André</option>
+                        <option value="">Santos</option>
+                        <option value="">São Bernardo do Campo</option>
+                        <option value="">São Carlos</option>
+                        <option value="">São Gonçalo</option>
+                        <option value="">São João de Meriti</option>
+                        <option value="">São José</option>
+                        <option value="">São José do Rio Preto</option>
+                        <option value="">São José dos Campos</option>
+                        <option value="">São José dos Pinhais</option>
+                        <option value="">São Leopoldo</option>
+                        <option value="">São Luís</option>
+                        <option value="">São Paulo</option>
+                        <option value="">São Pedro da Aldeia</option>
+                        <option value="">São Vicente</option>
+                        <option value="">Sapucaia do Sul</option>
+                        <option value="">Saquarema</option>
+                        <option value="">Serra</option>
+                        <option value="">Serra Talhada</option>
+                        <option value="">Sete Lagoas</option>
+                        <option value="">Sinop</option>
+                        <option value="">Sobradinho</option>
+                        <option value="">Sobral</option>
+                        <option value="">Sorocaba</option>
+                        <option value="">Sorriso</option>
+                        <option value="">Sumaré</option>
+                        <option value="">Suzano</option>
+                        <option value="">Taboão da Serra</option>
+                        <option value="">Taguatinga</option>
+                        <option value="">Tatuí</option>
+                        <option value="">Taubaté</option>
+                        <option value="">Teresina</option>
+                        <option value="">Três Lagoas</option>
+                        <option value="">Trindade</option>
+                        <option value="">Tubarão</option>
+                        <option value="">Ubatuba</option>
+                        <option value="">Uberaba</option>
+                        <option value="">Uberlândia</option>
+                        <option value="">Valparaíso de Goiás</option>
+                        <option value="">Várzea Grande</option>
+                        <option value="">Viamão</option>
+                        <option value="">Vicente Pires</option>
+                        <option value="">Vila Velha</option>
+                        <option value="">Vitória da Conquista</option>
+                        <option value="">Vitória</option>
+                        <option value="">Volta Redonda</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select">
+                        <option value="Categoria" selected>E-mail</option>
+                        <option value="email">teste@teste.com</option>
+                      </select>
+                    </div>
+                    <button type="button" class="btn btn-red">
+                      Filtrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---------------------->
+        
+          <!-- Informação -->
+          <div class="m-0 my-5 p-0 ">
+            <p class="m-0 p-0 fs-6">
+              Você tem <strong>1 anúncio ativo</strong>
+            </p>
+          </div>
+          <!---------------------->
+        
+          <!-- Informação Nome -->
+          <div class="m-0 mt-5 mb-3 p-0">
+            <span class="m-0 p-3 fs-7 fs-sm-6 border border-light-subtle rounded-4 fw-medium gap-1">
+              <i class="bi bi-person-fill fs-6 fs-sm-5"></i>
+              Juliene de Paula de Oliveira Santiago
+            </span>
+          </div>
+          <!---------------------->
+        
+          <!-- Disponibilidade -->
+          <div class="p-0 d-flex align-items-center justify-content-end" style="margin-bottom: -15px;">
+            <span
+              class="m-0 p-2 fs-7 lh-0 fw-medium text-success border border-light-subtle rounded-4 fw-medium gap-1 bg-white">
+              <i class="bi bi-circle-fill fs-8"></i>
+              Publicado
+            </span>
+          </div>
+          <!---------------------->
+        
+          <!-- Informações sobre o anuncio -->
+          <div class="shadow-sm px-2 px-sm-4 pt-4 pb-2 mb-5 bg-body-tertiary rounded">
+            <div class="mb-3">
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Data de vencimento: <strong>Janeiro 14, 2026</strong>
+              </p>
+              <p class="p-0 m-0 fs-7 lh-0 fw-medium">
+                Publicado por: julianepsantiago93@gmail.com
+              </p>
+            </div>
+        
+            <div class="bg-white p-3 mb-4 border border-light-subtle rounded-3">
+              <div>
+                <p class="m-0 p-0 fs-5 fw-medium d-flex align-items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="currentColor">
+                    <path
+                      d="M6.65533 0.621196L0.260038 8.03343C-0.326891 8.71369 0.144149 9.78574 1.02998 9.78574H3.28444C4.18561 9.78574 4.89469 10.5439 5.05255 11.4536C5.92063 16.4557 10.7893 17.7832 15.6327 17.9997C16.0166 18.0168 16.1297 17.497 15.7825 17.3283C11.6938 15.3418 11.1631 14.7662 11.0942 11.4607C11.075 10.537 11.8144 9.78574 12.7156 9.78574H14.97C15.8559 9.78574 16.3269 8.71369 15.74 8.03343L9.34468 0.621197C8.63016 -0.206933 7.36984 -0.206934 6.65533 0.621196Z">
+                    </path>
+                  </svg>
+                  Top
+                </p>
+                <p class="m-0 my-1 p-0 fs-7 fw-medium">
+                  <strong>6 destaques</strong> por noite durante <strong>1 noite</strong>
+                </p>
+                <p class="m-0 p-0 fs-7 fw-medium d-flex align-items-center gap-1">
+                  <i class="bi bi-moon fs-5"></i>
+                  Madrugada 00:00 - 06:00
+                </p>
+              </div>
+              <hr />
+              <div>
+                <p class="p-0 m-0 fs-7 lh-0 fw-medium text-red d-flex align-items-center gap-2">
+                  <i class="bi bi-circle-fill fs-8"></i>
+                  <strong>A promoção expirou em 14 de dezembro de 2025 às 23:59</strong>
+                </p>
+              </div>
+            </div>
+        
+            <!-- Banner TOP - Sem imagem -->
+            <a href="anuncio.html" class="text-decoration-none">
+              <div class="d-flex flex-row border border-1 border-gray rounded-3 mb-4 bg-white">
+                <div class="d-flex align-items-end justify-content-start flex-column">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-1 text-white fw-regular rounded-2 py-1 bg-red"
+                    style="width: 80px;">
+                    360°
+                    <img src="media/logo-fogo-branco.png" alt="" width="14">
+                  </div>
+                  <div class="px-3 px-md-4 pb-4 pt-2">
+                    <h2 class="fs-6 fs-md-5 text-red">
+                      LOREM IPSUM DOLOR SIT AMET.
+                    </h2>
+                    <p class="text-dark fs-7 fs-md-6 frase-limitada">
+                      Nam sodales, augue sed fermentum vestibulum, elit turpis consequat odio, eu facilisis ligula tortor non
+                      lacus.
+                      Aenean faucibus mauris a massa consectetur consectetur vel quis erat. Pellentesque auctor at diam eu
+                      sodales.
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 448 512">
+                        <path fill="#2b2b2b"
+                          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg class="toggle-location" width="12" fill="#2b2b2b" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path
+                          d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                      </svg>
+                      Lorem
+                    </p>
+                    <p class="gap-2 d-flex align-items-center justify-content-start fs-10 fs-md-7 fw-semibold my-1 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 320 512">
+                        <path
+                          d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z" />
+                      </svg>
+                      Lorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!---------------->
+        
+            <!-- Botões de Manutenção do Anúncio -->
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-start">
+              <div
+                class="d-flex flex-row align-items-center align-items-sm-start justify-content-center justify-content-sm-start py-4 px-0 px-sm-5 gap-5 gap-sm-7">
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pause-circle-fill fs-4"></i>
+                  PAUSAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-pencil-fill fs-4"></i>
+                  EDITAR
+                </a>
+                <a class="link-red d-flex flex-column align-items-center justify-content-between fs-8 fw-medium">
+                  <i class="bi bi-trash3-fill fs-4"></i>
+                  EXCLUIR
+                </a>
+              </div>
+              <button type="button" class="btn btn-red w-100 py-2">
+                RENOVAR PROMOÇÃO
+              </button>
+            </div>
+        
+            <!---------------->
+          </div>
+          <!---------------------->
+        </div>
+
+        <!-- Conteúdo da Aba Inativos -->
+        <div class="tab-pane fade" id="inativo" role="tabpanel" aria-labelledby="inativo-tab">
+
+          <p class="mb-6 mt-4 fs-5">
+            Você tem <strong>0 anúncios não publicados</strong>
+          </p>
+
+        </div>
+        <!---------------------->
+      </div>
+      
+    </div>
+  </div>
+  <!-- Fim Sessão 2 -->
+
+  <!-- Sessão 3 -->
+  <div class="container">
+    <div class="border border-1 border-red px-4 py-3 rounded-3 mb-5">
+      <div class="d-flex align-items-start gap-2">
+        <div class="mt-0">
+          <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="#c41617" d="M256 48C141.1 48 48 141.1 48 256l0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C0 114.6 114.6 0 256 0S512 114.6 512 256l0 144.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24l-32 0c-26.5 0-48-21.5-48-48s21.5-48 48-48l32 0c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40L464 256c0-114.9-93.1-208-208-208zM144 208l16 0c17.7 0 32 14.3 32 32l0 112c0 17.7-14.3 32-32 32l-16 0c-35.3 0-64-28.7-64-64l0-48c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64l0 48c0 35.3-28.7 64-64 64l-16 0c-17.7 0-32-14.3-32-32l0-112c0-17.7 14.3-32 32-32l16 0z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="fs-6 fw-bold m-0 p-0 d-flex flex-column">
+            Precisa de ajuda?
+            <span class="fs-7 fw-normal mt-2">
+              Entre em contato conosco através dos nossos canais de atendimento, de <strong>segunda</strong> a <strong>sexta-feira</strong>, das 09:00 às 16:00 horas.
+            </span>
+          </p>
+          <div class="mt-4 d-flex gap-4">
+            <a href="#" target="_blank" class="d-flex align-items-center link-red fs-6 gap-1">
+              <svg width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+              </svg>
+              WhatsApp
+            </a>
+
+            <a href="#" target="_blank" class="d-flex align-items-center link-red fs-6 gap-1">
+              <svg width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                <path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/>
+              </svg>
+              Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Sessão 3 -->
+
+  <!-- Footer -->
+  <md-footer></md-footer>
+  <!-- Fim Footer -->
+
+  <!-- Modal Área do Membro -->
+  <md-modal-areamembro></md-modal-areamembro>
+  <!-- Fim Modal Área do Membro -->
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script type="module" src="js/modulos/libs.js"></script>
+</body>
+
+</html>
